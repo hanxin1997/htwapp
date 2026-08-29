@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">手写本</string>
+
+    <string name="btn_clear">清空</string>
+    <string name="btn_undo">撤销</string>
+    <string name="btn_pen_format">%1$s·%2$s</string>
+
+    <string name="pen_fountain">钢笔</string>
+    <string name="pen_pencil">铅笔</string>
+    <string name="pen_marker">马克笔</string>
+    <string name="pen_highlighter">荧光笔</string>
+    <string name="pen_eraser">橡皮</string>
+
+    <string name="width_thin">细</string>
+    <string name="width_medium">中</string>
+    <string name="width_thick">粗</string>
+
+    <string name="dialog_pen_type">笔型</string>
+    <string name="dialog_pen_width">粗细</string>
+
+    <string name="desc_canvas">手写画布</string>
+</resources>

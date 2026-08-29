@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/paper_white">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/toolbar_button_height"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btn_pen"
+            style="@style/Widget.Notepad.ToolbarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/toolbar_gap" />
+
+        <Button
+            android:id="@+id/btn_clear"
+            style="@style/Widget.Notepad.ToolbarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:layout_marginEnd="@dimen/toolbar_gap"
+            android:text="@string/btn_clear" />
+
+        <Button
+            android:id="@+id/btn_undo"
+            style="@style/Widget.Notepad.ToolbarButton"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:text="@string/btn_undo" />
+
+    </LinearLayout>
+
+    <com.htdzs.notepad.view.DrawingView
+        android:id="@+id/drawing_view"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:contentDescription="@string/desc_canvas" />
+
+</LinearLayout>

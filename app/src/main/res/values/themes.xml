@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="Theme.Notepad" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="android:windowBackground">@color/paper_white</item>
+        <!-- 电纸书刷新慢，任何窗口动画都是拖影 -->
+        <item name="android:windowAnimationStyle">@null</item>
+    </style>
+
+    <!-- 顶部三个大按钮：白底黑框，按下反色 -->
+    <style name="Widget.Notepad.ToolbarButton">
+        <item name="android:background">@drawable/button_bg</item>
+        <item name="android:textColor">@color/button_text</item>
+        <item name="android:textSize">@dimen/toolbar_button_text</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:textAllCaps">false</item>
+        <item name="android:gravity">center</item>
+        <item name="android:stateListAnimator">@null</item>
+        <item name="android:elevation">0dp</item>
+    </style>
+
+    <!-- 弹窗里的笔型/粗细选项，选中态也反色 -->
+    <style name="Widget.Notepad.OptionButton" parent="Widget.Notepad.ToolbarButton">
+        <item name="android:textSize">22sp</item>
+    </style>
+
+    <style name="TextAppearance.Notepad.DialogLabel">
+        <item name="android:textColor">@color/ink_black</item>
+        <item name="android:textSize">@dimen/dialog_label_text</item>
+        <item name="android:textStyle">bold</item>
+    </style>
+
+</resources>

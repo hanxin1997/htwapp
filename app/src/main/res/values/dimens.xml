@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- 电纸书触摸精度低，按钮必须大 -->
+    <dimen name="toolbar_button_height">88dp</dimen>
+    <dimen name="toolbar_button_text">24sp</dimen>
+    <dimen name="toolbar_gap">4dp</dimen>
+
+    <dimen name="button_border">3dp</dimen>
+
+    <dimen name="dialog_padding">20dp</dimen>
+    <dimen name="dialog_min_width">360dp</dimen>
+    <dimen name="dialog_label_text">18sp</dimen>
+    <dimen name="option_height">76dp</dimen>
+    <dimen name="option_gap">10dp</dimen>
+</resources>

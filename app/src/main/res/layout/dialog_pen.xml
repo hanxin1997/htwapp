@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:minWidth="@dimen/dialog_min_width"
+    android:padding="@dimen/dialog_padding"
+    android:background="@color/paper_white">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="@dimen/option_gap"
+        android:text="@string/dialog_pen_type"
+        android:textAppearance="@style/TextAppearance.Notepad.DialogLabel" />
+
+    <!-- 笔型按钮在 PenPickerDialog 里按 PenType 枚举动态生成，避免枚举和 XML 走偏 -->
+    <LinearLayout
+        android:id="@+id/pen_type_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/dialog_padding"
+        android:layout_marginBottom="@dimen/option_gap"
+        android:text="@string/dialog_pen_width"
+        android:textAppearance="@style/TextAppearance.Notepad.DialogLabel" />
+
+    <LinearLayout
+        android:id="@+id/pen_width_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" />
+
+</LinearLayout>
