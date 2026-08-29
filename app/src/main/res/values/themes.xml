@@ -8,7 +8,9 @@
     </style>
 
     <!-- 顶部三个大按钮：白底黑框，按下反色 -->
-    <style name="Widget.Notepad.ToolbarButton">
+    <!-- parent 必须显式写：弹窗里的按钮用 Button(ctx, null, 0, style) 构造，
+         defStyleAttr=0 会跳过主题的 buttonStyle，可点击/内边距只能从这里继承 -->
+    <style name="Widget.Notepad.ToolbarButton" parent="Widget.AppCompat.Button">
         <item name="android:background">@drawable/button_bg</item>
         <item name="android:textColor">@color/button_text</item>
         <item name="android:textSize">@dimen/toolbar_button_text</item>
@@ -24,7 +26,7 @@
         <item name="android:textSize">22sp</item>
     </style>
 
-    <style name="TextAppearance.Notepad.DialogLabel">
+    <style name="TextAppearance.Notepad.DialogLabel" parent="TextAppearance.AppCompat">
         <item name="android:textColor">@color/ink_black</item>
         <item name="android:textSize">@dimen/dialog_label_text</item>
         <item name="android:textStyle">bold</item>
