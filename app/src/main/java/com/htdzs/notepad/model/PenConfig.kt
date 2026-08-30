@@ -9,7 +9,7 @@ enum class WidthLevel(@StringRes val labelRes: Int, val scale: Float) {
     THICK(R.string.width_thick, 2f),
 }
 
-/** 当前选的笔。清空按钮会把它复位成 [DEFAULT]。 */
+/** 当前选的笔。[DEFAULT] 只用于启动时的初值，清空按钮不动它。 */
 data class PenConfig(
     val type: PenType = PenType.FOUNTAIN,
     val level: WidthLevel = WidthLevel.MEDIUM,

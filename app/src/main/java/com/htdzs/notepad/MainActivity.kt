@@ -22,16 +22,16 @@ class MainActivity : AppCompatActivity() {
         penButton.setOnClickListener {
             PenPickerDialog.show(this, drawingView.pen) { applyPen(it) }
         }
-        findViewById<Button>(R.id.btn_clear).setOnClickListener { clearAll() }
+        findViewById<Button>(R.id.btn_clear).setOnClickListener { drawingView.clear() }
         findViewById<Button>(R.id.btn_undo).setOnClickListener { drawingView.undo() }
 
         applyPen(PenConfig.DEFAULT)
     }
 
-    /** 清空 = 擦掉全部笔画 + 笔恢复默认。不弹确认，一按就干净。 */
-    private fun clearAll() {
-        drawingView.clear()
-        applyPen(PenConfig.DEFAULT)
+    /** 进后台要把电纸书刷新波形切回去，别把机器留在快刷模式上 */
+    override fun onPause() {
+        super.onPause()
+        drawingView.releaseFastRefresh()
     }
 
     private fun applyPen(config: PenConfig) {
